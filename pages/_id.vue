@@ -12,7 +12,7 @@ export default {
   async asyncData({ params }) {
     const movieId = params.id;
     try {
-      const response = await fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=7704cc7f`);
+      const response = await fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=7704cc7f`);
       const data = await response.json();
       return { movie: data };
     } catch (error) {
