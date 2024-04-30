@@ -15,7 +15,7 @@
 export default {
   async asyncData() {
     try {
-      const response = await fetch('http://www.omdbapi.com/?s=Batman&apikey=7704cc7f');
+      const response = await fetch('https://www.omdbapi.com/?s=Batman&apikey=7704cc7f');
       const data = await response.json();
       return { movies: data.Search };
     } catch (error) {
